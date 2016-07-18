@@ -20,17 +20,33 @@ writing it up so that others could avoid the mistakes that I made.
 * Apache Maven 3.1.0 or later.
 
 ## Building
-* mvn clean package
-  * This may take a few minutes the first time as it will pull down a local copy of node/npm and necessary modules.
-* ./mccormi-template/springboot-with-webpack/target/springboot-with-webpack.jar
-* http://localhost:8080
-
+```
+mvn clean package
+```
+This may take a few minutes the first time as it will pull down a local copy of node/npm and necessary modules.
+```
+./mccormi-template/springboot-with-webpack/target/springboot-with-webpack.jar
+```
+Start the spring boot application.
+```
+http://localhost:8080
+```
+View the application in your browser. 
 ## Dev Build
-* mvn clean package
-* ./mccormi-template/springboot-with-webpack/target/springboot-with-webpack.jar --spring.profiles.active=dev
-* in a second terminal window
-  * cd mccormi-template/springboot-with-webpack/frontend
-  * gulp
+```
+mvn clean package
+```
+```
+./mccormi-template/springboot-with-webpack/target/springboot-with-webpack.jar --spring.profiles.active=dev
+```
+This will start the spring boot application with the dev profile active.
 
-You can run the springboot application in dev mode which requires the webpack dev server to be run as well. This way when you 
-make changes to the javascript code they'll be reflected in the browser quickly. 
+
+Then in a second terminal window
+```
+cd mccormi-template/springboot-with-webpack/frontend
+```
+```
+gulp
+```
+This will run the webpack dev server. This way when you make changes to the javascript code they'll be reflected in the browser quickly. 
