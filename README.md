@@ -7,9 +7,10 @@ Create a starter template that incorporates the major tools necessary to build a
 * JSP Tags
 * Spring MVC
 * Spring Boot
+* Webpack
+* Gulp
 * Bootstrap
 * React
-* Webpack
   
 I was trying to bring all of these tools together and ran into a few pitfalls along the way. Figured it was worthwhile 
 writing it up so that others could avoid the mistakes that I made. 
@@ -32,4 +33,4 @@ writing it up so that others could avoid the mistakes that I made.
   * gulp
 
 You can run the springboot application in dev mode which requires the webpack dev server to be run as well. This way when you 
-changes to the javascript code they're reflected in the browser quickly. 
+make changes to the javascript code they'll be reflected in the browser quickly. 
