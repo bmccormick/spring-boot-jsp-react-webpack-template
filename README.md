@@ -1,0 +1,1 @@
+# mccormi-template
