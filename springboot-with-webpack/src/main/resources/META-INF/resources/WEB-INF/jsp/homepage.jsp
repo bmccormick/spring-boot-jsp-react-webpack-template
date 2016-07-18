@@ -2,7 +2,7 @@
 <module:template>
     <div class="jumbotron">
         <h1>Spring With Webpack Template</h1>
-
+        <div id="currentTime"></div>
         <p><a class="btn btn-lg btn-success" href="/" role="button">Get Started!</a></p>
     </div>
 
