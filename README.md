@@ -6,7 +6,7 @@ Create a starter template that incorporates the major tools necessary to build a
 * JSP
 * JSP Tags
 * Spring MVC
-* Spring Boot
+* SpringBoot
 * Webpack
 * Gulp
 * Bootstrap
