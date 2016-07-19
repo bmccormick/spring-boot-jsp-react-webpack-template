@@ -1,4 +1,4 @@
-# Mccormi Templates
+# SpringBoot with JSP, React, and Webpack Template
 
 ## Goal
 Create a starter template that incorporates the major tools necessary to build a modern web application.
