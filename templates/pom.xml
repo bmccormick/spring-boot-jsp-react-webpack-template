@@ -195,7 +195,7 @@
           <artifactId>frontend-maven-plugin</artifactId>
           <version>${version.frontend-maven-plugin}</version>
           <configuration>
-            <workingDirectory>${project.basedir}/frontend</workingDirectory>
+            <workingDirectory>${project.basedir}/src/main/javascript</workingDirectory>
           </configuration>
           <executions>
             <execution>

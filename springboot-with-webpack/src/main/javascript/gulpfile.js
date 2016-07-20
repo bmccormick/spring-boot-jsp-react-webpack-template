@@ -14,7 +14,7 @@ var webpackConfig = require("./webpack.config.js");
 gulp.task("default", ["webpack-dev-server"]);
 
 gulp.task('clean', function (cb) {
-  rimraf('../src/main/resources/static/dist', cb);
+  rimraf('../resources/static/dist', cb);
 });
 
 gulp.task('lint', function () {
@@ -27,11 +27,11 @@ gulp.task('lint', function () {
 gulp.task('pre',['clean']);
 
 gulp.task('css', ['pre'], function () {
-  return gulp.src('css/**/*.css')
+  return gulp.src('../css/**/*.css')
     .pipe(sourcemaps.init())
     .pipe(cleanCSS())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('../src/main/resources/static/dist/css'));
+    .pipe(gulp.dest('../resources/static/dist/css'));
 });
 
 // Production build

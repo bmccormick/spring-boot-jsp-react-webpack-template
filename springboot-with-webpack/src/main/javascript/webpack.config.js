@@ -4,11 +4,11 @@ var webpack = require("webpack");
 module.exports = {
   cache: true,
   entry: {
-    homepage: "./javascript/index.js",
+    homepage: "./app/index.js",
     vendor: ["jquery", "react", "bootstrap"]
   },
   output: {
-    path: path.resolve(__dirname + "/../src/main/resources/static/dist/"),
+    path: path.resolve(__dirname + "/../resources/static/dist/"),
     filename: "[name].js"
   },
   module: {
