@@ -1,4 +1,4 @@
-# A template application bringing together SpringBoot, JSP, JSP Tags, React, and Webpack 
+# An template application integrating SpringBoot, JSP, React, and Webpack 
 
 ## Goal
 Create a starter template that incorporates the major tools necessary to build a modern web application.
