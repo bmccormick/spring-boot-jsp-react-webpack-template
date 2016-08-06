@@ -1,5 +1,5 @@
 var $ = require("jquery");
-require("react");
+var React = require("react");
 var ReactDOM = require('react-dom');
 var CurrentTime = require('./components/test/CurrentTime');
 

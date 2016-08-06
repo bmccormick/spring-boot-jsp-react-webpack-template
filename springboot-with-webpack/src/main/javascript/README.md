@@ -1,6 +1,4 @@
-# Frontend
-
-## Build
+# Build
 
 ```shell
 gulp
