@@ -39,11 +39,11 @@
     <version.mockito>1.9.5</version.mockito>
     <version.mysql>5.1.37</version.mysql>
     <version.slf4j>1.7.13</version.slf4j>
-    <version.spring>4.2.6.RELEASE</version.spring>
-    <version.spring-boot>1.3.5.RELEASE</version.spring-boot>
-    <version.spring-security>4.1.0.RELEASE</version.spring-security>
+    <version.spring>4.3.2.RELEASE</version.spring>
+    <version.spring-boot>1.4.0.RELEASE</version.spring-boot>
+    <version.spring-security>4.1.1.RELEASE</version.spring-security>
     <version.taglibs>1.2.1</version.taglibs>
-    <version.tomcat>8.0.33</version.tomcat>
+    <version.tomcat>8.5.4</version.tomcat>
 
     <!-- Plugin versions -->
     <version.buildnumber-maven-plugin>1.4</version.buildnumber-maven-plugin>
