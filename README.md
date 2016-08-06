@@ -1,4 +1,4 @@
-# SpringBoot with JSP, React, and Webpack Template
+# A template application integrating SpringBoot, JSP, React, and Webpack 
 
 ## Goal
 Create a starter template that incorporates the major tools necessary to build a modern web application.
@@ -25,7 +25,7 @@ mvn clean package
 ```
 This may take a few minutes the first time as it will pull down a local copy of node/npm and necessary modules.
 ```
-./mccormi-template/springboot-with-webpack/target/springboot-with-webpack.jar
+./springboot-with-webpack/target/springboot-with-webpack.jar
 ```
 Start the spring boot application.
 ```
@@ -37,14 +37,14 @@ View the application in your browser.
 mvn clean package
 ```
 ```
-./mccormi-template/springboot-with-webpack/target/springboot-with-webpack.jar --spring.profiles.active=dev
+./springboot-with-webpack/target/springboot-with-webpack.jar --spring.profiles.active=dev
 ```
 This will start the spring boot application with the dev profile active.
 
 
 Then in a second terminal window
 ```
-cd mccormi-template/springboot-with-webpack/frontend
+cd springboot-with-webpack/src/main/javascript
 ```
 ```
 gulp
