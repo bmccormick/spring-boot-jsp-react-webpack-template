@@ -1,4 +1,4 @@
-# A template application integrating SpringBoot, JSP, React, and Webpack 
+# A template application integrating Spring Boot, JSP, React, and Webpack 
 
 ## Goal
 Create a starter template that incorporates the major tools necessary to build a modern web application.
@@ -6,7 +6,7 @@ Create a starter template that incorporates the major tools necessary to build a
 * JSP
 * JSP Tags
 * Spring MVC
-* SpringBoot
+* Spring Boot
 * Webpack
 * Gulp
 * Bootstrap
@@ -20,32 +20,35 @@ writing it up so that others could avoid the mistakes that I made.
 * Apache Maven 3.1.0 or later.
 
 ## Building
+Build the application.
 ```
 mvn clean package
 ```
 This may take a few minutes the first time as it will pull down a local copy of node/npm and necessary modules.
+
+Start the spring boot application.
+
 ```
 ./springboot-with-webpack/target/springboot-with-webpack.jar
 ```
-Start the spring boot application.
+View the application in your browser.
 ```
 http://localhost:8080
 ```
-View the application in your browser. 
 ## Dev Build
+Build the application
 ```
 mvn clean package
 ```
+Start the spring boot application with the dev profile active.
 ```
 ./springboot-with-webpack/target/springboot-with-webpack.jar --spring.profiles.active=dev
 ```
-This will start the spring boot application with the dev profile active.
-
-
 Then in a second terminal window
 ```
 cd springboot-with-webpack/src/main/javascript
 ```
+Start the webpack dev server.
 ```
 gulp
 ```
