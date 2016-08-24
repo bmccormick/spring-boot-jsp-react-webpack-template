@@ -52,6 +52,7 @@
     <version.maven-compiler-plugin>3.3</version.maven-compiler-plugin>
     <version.maven-enforcer-plugin>1.4.1</version.maven-enforcer-plugin>
     <version.frontend-maven-plugin>1.0</version.frontend-maven-plugin>
+    <version.git-commit>2.2.1</version.git-commit>
     <version.maven-jar-plugin>2.6</version.maven-jar-plugin>
     <version.maven-javadoc-plugin>2.10.1</version.maven-javadoc-plugin>
     <version.maven-resources-plugin>2.6</version.maven-resources-plugin>
@@ -248,6 +249,23 @@
               </goals>
             </execution>
           </executions>
+        </plugin>
+        <plugin>
+          <groupId>pl.project13.maven</groupId>
+          <artifactId>git-commit-id-plugin</artifactId>
+          <version>${version.git-commit}</version>
+          <executions>
+            <execution>
+              <id>get-the-git-infos</id>
+              <goals>
+                <goal>revision</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <generateGitPropertiesFile>true</generateGitPropertiesFile>
+
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
