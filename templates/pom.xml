@@ -30,7 +30,6 @@
     <version.joda-time>2.9.1</version.joda-time>
     <version.jopt-simple>4.9</version.jopt-simple>
     <version.json>20151123</version.json>
-    <version.jsoup>1.8.3</version.jsoup>
     <version.jsp-api>2.2</version.jsp-api>
     <version.jstl>1.2</version.jstl>
     <version.junit>4.12</version.junit>
@@ -39,11 +38,10 @@
     <version.mockito>1.9.5</version.mockito>
     <version.mysql>5.1.37</version.mysql>
     <version.slf4j>1.7.13</version.slf4j>
-    <version.spring>4.3.2.RELEASE</version.spring>
-    <version.spring-boot>1.4.0.RELEASE</version.spring-boot>
-    <version.spring-security>4.1.1.RELEASE</version.spring-security>
+    <version.spring>4.3.7.RELEASE</version.spring>
+    <version.spring-boot>1.5.2.RELEASE</version.spring-boot>
+    <version.spring-security>4.2.2.RELEASE</version.spring-security>
     <version.taglibs>1.2.1</version.taglibs>
-    <version.tomcat>8.5.4</version.tomcat>
 
     <!-- Plugin versions -->
     <version.buildnumber-maven-plugin>1.4</version.buildnumber-maven-plugin>
@@ -60,8 +58,8 @@
     <version.maven-surefire-plugin>2.16</version.maven-surefire-plugin>
     <version.maven-war-plugin>2.4</version.maven-war-plugin>
     <!-- tool versions -->
-    <version.node>v6.2.2</version.node>
-    <version.npm>3.10.3</version.npm>
+    <version.node>v6.10.0</version.node>
+    <version.npm>3.10.10</version.npm>
   </properties>
 
   <build>
@@ -167,31 +165,6 @@
           </configuration>
         </plugin>
         <plugin>
-          <groupId>org.eclipse.jetty</groupId>
-          <artifactId>jetty-maven-plugin</artifactId>
-          <version>${version.jetty}</version>
-          <configuration>
-            <scanIntervalSeconds>0</scanIntervalSeconds>
-            <useTestScope>true</useTestScope>
-            <webAppConfig>
-              <defaultsDescriptor>src/test/resources/webdefault.xml</defaultsDescriptor>
-            </webAppConfig>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>rpm-maven-plugin</artifactId>
-          <version>${version.maven-rpm-plugin}</version>
-          <executions>
-            <execution>
-              <id>attach-rpm</id>
-              <goals>
-                <goal>attached-rpm</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
           <groupId>com.github.eirslett</groupId>
           <artifactId>frontend-maven-plugin</artifactId>
           <version>${version.frontend-maven-plugin}</version>
@@ -292,11 +265,6 @@
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
         <version>${version.log4j}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.tomcat.embed</groupId>
-        <artifactId>tomcat-embed-jasper</artifactId>
-        <version>${version.tomcat}</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
