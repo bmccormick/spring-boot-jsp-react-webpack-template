@@ -1,11 +1,9 @@
-var $ = require("jquery");
-var React = require("react");
-var ReactDOM = require('react-dom');
-var CurrentTime = require('./components/test/CurrentTime');
+const $ = require('jquery');
+const React = require('react');
+const ReactDOM = require('react-dom');
+const CurrentTime = require('./components/test/CurrentTime');
 
-console.log('Loaded Homepage');
-
-$(document).ready(function () {
+$(document).ready(() => {
   ReactDOM.render(
     <CurrentTime date={new Date()}/>,
     document.getElementById('currentTime')

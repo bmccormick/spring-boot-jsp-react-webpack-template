@@ -7,11 +7,9 @@
 <html lang="en">
 <head>
   <module:title/>
-  <module:javascript/>
   <module:css/>
 </head>
 <body>
-  <link rel="stylesheet" type="text/css" href="/dist/css/homepage.css"/>
   <div class="container">
     <div class="header clearfix">
       <nav>

@@ -1,12 +1,12 @@
-var React = require("react");
+const React = require('react');
 
-module.exports = React.createClass({
-  render: function () {
+module.exports = class CurrentTime extends React.Component {
+  render() {
     return (
       <p>
         It is {this.props.date.toTimeString()}
       </p>
     );
   }
-});
+};
 
