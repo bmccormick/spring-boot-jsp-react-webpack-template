@@ -33,7 +33,7 @@
     <version.mysql>8.0.17</version.mysql>
     <version.slf4j>1.7.30</version.slf4j>
     <version.spring>5.2.4.RELEASE</version.spring>
-    <version.spring-boot>2.2.4.RELEASE</version.spring-boot>
+    <version.spring-boot>2.2.5.RELEASE</version.spring-boot>
     <version.spring-security>5.2.2.RELEASE</version.spring-security>
 
     <!-- Plugin versions -->
