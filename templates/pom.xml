@@ -51,8 +51,8 @@
     <version.maven-war-plugin>3.2.3</version.maven-war-plugin>
 
     <!-- tool versions -->
-    <version.node>v12.16.1</version.node>
-    <version.npm>6.14.2</version.npm>
+    <version.node>v12.18.3</version.node>
+    <version.npm>6.14.6</version.npm>
   </properties>
 
   <build>

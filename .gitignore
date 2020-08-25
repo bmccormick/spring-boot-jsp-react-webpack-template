@@ -2,6 +2,7 @@
 */target/
 .idea/
 *.iml
+.DS_Store
 /springboot-with-webpack/src/main/resources/static/dist/
 /springboot-with-webpack/src/main/javascript/node_modules/
 /springboot-with-webpack/src/main/javascript/node/
