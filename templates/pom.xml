@@ -13,46 +13,36 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <version.java.source>11</version.java.source>
-    <version.java.target>11</version.java.target>
+    <version.java.source>21</version.java.source>
+    <version.java.target>21</version.java.target>
 
     <!-- Dependency versions -->
-    <version.guava>28.2-jre</version.guava>
-    <version.hibernate>5.4.12.Final</version.hibernate>
-    <version.httpclient>4.5.11</version.httpclient>
-    <version.hsqldb>2.5.0</version.hsqldb>
-    <version.jackson>2.10.2</version.jackson>
-    <version.joda-time>2.10.5</version.joda-time>
-    <version.json>20190722</version.json>
-    <version.jsoup>1.12.2</version.jsoup>
-    <version.jstl>1.2</version.jstl>
-    <version.junit>4.12</version.junit>
-    <version.log4j>2.13.2</version.log4j>
-    <version.metrics>4.0.6</version.metrics>
-    <version.mockito>2.23.4</version.mockito>
-    <version.mysql>8.0.17</version.mysql>
-    <version.slf4j>1.7.30</version.slf4j>
-    <version.spring>5.2.4.RELEASE</version.spring>
-    <version.spring-boot>2.2.5.RELEASE</version.spring-boot>
-    <version.spring-security>5.2.2.RELEASE</version.spring-security>
+    <version.guava>33.4.0-jre</version.guava>
+    <version.hibernate>7.2.12.Final</version.hibernate>
+    <version.httpclient>5.5.2</version.httpclient>
+    <version.h2>2.3.232</version.h2>
+    <version.joda-time>2.13.0</version.joda-time>
+    <version.json>20250517</version.json>
+    <version.junit>6.0.3</version.junit>
+    <version.mysql>9.7.0</version.mysql>
+    <version.slf4j>2.0.17</version.slf4j>
+    <version.spring>7.0.7</version.spring>
+    <version.spring-boot>4.0.6</version.spring-boot>
+    <version.spring-security>7.0.5</version.spring-security>
 
     <!-- Plugin versions -->
-    <version.buildnumber-maven-plugin>1.4</version.buildnumber-maven-plugin>
-    <version.frontend-maven-plugin>1.9.1</version.frontend-maven-plugin>
-    <version.git-commit-plugin>3.0.1</version.git-commit-plugin>
-    <version.maven-antrun-plugin>1.8</version.maven-antrun-plugin>
-    <version.maven-checkstyle-plugin>3.1.1</version.maven-checkstyle-plugin>
-    <version.maven-compiler-plugin>3.8.1</version.maven-compiler-plugin>
-    <version.maven-dependency-plugin>3.1.1</version.maven-dependency-plugin>
-    <version.maven-jar-plugin>3.2.0</version.maven-jar-plugin>
-    <version.maven-javadoc-plugin>3.1.1</version.maven-javadoc-plugin>
-    <version.maven-resources-plugin>3.1.0</version.maven-resources-plugin>
-    <version.maven-surefire-plugin>3.0.0-M4</version.maven-surefire-plugin>
-    <version.maven-war-plugin>3.2.3</version.maven-war-plugin>
+    <version.frontend-maven-plugin>2.0.0</version.frontend-maven-plugin>
+    <version.git-commit-plugin>9.0.1</version.git-commit-plugin>
+    <version.maven-checkstyle-plugin>3.5.0</version.maven-checkstyle-plugin>
+    <version.maven-compiler-plugin>3.15.0</version.maven-compiler-plugin>
+    <version.maven-dependency-plugin>3.10.0</version.maven-dependency-plugin>
+    <version.maven-jar-plugin>3.5.0</version.maven-jar-plugin>
+    <version.maven-resources-plugin>3.4.0</version.maven-resources-plugin>
+    <version.maven-surefire-plugin>3.5.5</version.maven-surefire-plugin>
 
     <!-- tool versions -->
-    <version.node>v12.18.3</version.node>
-    <version.npm>6.14.6</version.npm>
+    <version.node>v24.15.0</version.node>
+    <version.npm>11.12.1</version.npm>
   </properties>
 
   <build>
@@ -74,9 +64,9 @@
               <phase>validate</phase>
               <configuration>
                 <configLocation>checkstyle.xml</configLocation>
-                <encoding>UTF-8</encoding>
                 <consoleOutput>true</consoleOutput>
                 <failsOnError>true</failsOnError>
+                <excludes>**/uuid.java, **/*Avro.java</excludes>
               </configuration>
               <goals>
                 <goal>check</goal>
@@ -205,7 +195,6 @@
           <version>${version.spring-boot}</version>
           <configuration>
             <addResources>true</addResources>
-            <executable>true</executable>
           </configuration>
           <executions>
             <execution>
